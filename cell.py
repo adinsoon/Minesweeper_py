@@ -49,5 +49,3 @@ class Cell:  # represents one single cell on the board
 
     def get_string(self):
         return self.string
-
-

@@ -1,13 +1,8 @@
 import board
+import text_view
 
-board = board.Board(10, 9, "EASY")
+board = board.Board(9, 10, "EASY")
+view = text_view.TextView(board)
 
-# for i in range(len(board.cells)):
-#     print(i)
-#     print(board.cells[i].get_position())
-
-board.debug_display()
-board.set_mode()
-print(board.bombs_quantity)
-
+view.display()
 
