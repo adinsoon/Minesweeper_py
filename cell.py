@@ -24,10 +24,13 @@ class Cell:  # represents one single cell on the board
         self.has_cell_flag = num.invert(self.has_cell_flag)
 
     def reveal_field(self):
-        self.is_cell_revealed = num.invert(self.is_cell_revealed)
+        self.is_cell_revealed = True
 
     def put_bomb(self):
-        self.has_cell_bomb = num.invert(self.has_cell_bomb)
+        self.has_cell_bomb = True
+
+    def take_bomb(self):
+        self.has_cell_bomb = False
 
     def has_bomb(self):
         return self.has_cell_bomb

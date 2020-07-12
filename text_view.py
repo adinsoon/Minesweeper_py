@@ -11,7 +11,7 @@ class TextView:
     def display(self):
         for i in range(self.board.get_board_height()):
             for j in range(self.board.get_board_width()):
-                print(self.board.get_field_info(i, j), end=" ")
+                print(self.board.get_field_info(i, j), end="\t\t")
             print()
 
 
